@@ -29,7 +29,7 @@ const WeatherDescription = ({ value }) => {
   const formattedTime = currentTime.toLocaleTimeString();
   return (
     <div className="flex flex-col justify-center  items-center min-h-screen bg-gradient-to-r from-blue-300 to-blue-500 p-4">
-      <img src={country.coatOfArms.png} alt="" width={40} className="absolute top-[210px] left-[560px]" />
+      <img src={country?.coatOfArms?.png} alt="" width={40} className="absolute top-[210px] left-[560px]" />
       <h1 className="text-5xl font-bold mb-6 text-white drop-shadow-lg">
         Current Weather in {name}
       </h1>
